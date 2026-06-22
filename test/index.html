@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Return Signal test page</title>
+<style>body{font:15px/1.5 system-ui,Segoe UI,Arial,sans-serif;color:#222;max-width:42rem;margin:4rem auto;padding:0 1rem}h1{font-size:20px}code{background:#f2f2f2;padding:1px 5px;border-radius:4px}</style>
+</head>
+<body>
+<h1>Open-tracking test page</h1>
+<p>If you can read this, GitHub Pages is serving the findings repo. When this page loads it pings the tracker, so a row tagged <code>smoke-test</code> should appear in the OCS Opens sheet.</p>
+<script>
+  fetch("https://script.google.com/macros/s/AKfycbyB-21mpXwGbI0MZ3wFOcWNLgY5jCnscYFUdgR6FZxifxj3muuwAplFnG7zU2ef5X3pGQ/exec?id=smoke-test&ref=test-page", { mode: "no-cors" });
+</script>
+</body>
+</html>
