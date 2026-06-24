@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!--
+  OCS demonstration finding for Alta Pest Control (HQ Austin / Pflugerville, TX; 17 metro markets across ~9-12 states).
+  HubSpot confirmed live: js.hs-scripts.com/44586241, hsforms.net, and portalId "44586241" present in raw page source,
+  site-wide across home / contact / about / pest-control (the full HubSpot tracking script, not just a form embed, so HubSpot
+  is the inbound lead capture / marketing / CRM-of-record layer). FieldRoutes runs field operations (routing, scheduling,
+  billing) per a public FieldRoutes case study. Seam used: cross-branch lead routing + lead-source attribution + the
+  quote-to-first-service and recurring-plan retention handoff, where one HubSpot carries high-volume leads across 17 metro
+  markets, then those leads must hand off cleanly into field ops (FieldRoutes) and convert into a recurring subscription
+  plan, and a fraction stall between branch, channel, the first scheduled service, and the recurring plan with no single
+  owner watching the gap. Recurring-plan business, so a silently churned customer is a multi-year annuity loss, not a
+  one-time job. Decision-maker: Christopher Langlois, CEO and co-founder. Tone: respect a fast-growing, family-built
+  operation first, then name the one seam that hides where high lead volume, many branches, and recurring revenue cross
+  two systems. Portal id NEVER appears in the visible body.
+  v1: send as attachment (PDF) or host as a page.
+  TRACKING PIXEL GOES HERE -> <img src="https://YOURDOMAIN/p/alta-pest-control.gif" width="1" height="1" alt="">
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Likely Silent Seam in Alta Pest Control's Lead Flow</title>
+<style>
+  :root{
+    --ink:#15191e; --muted:#5b6470; --line:#e4e7eb; --bg:#ffffff;
+    --accent:#2e6e4e; --accent-soft:#e6f1ec; --good:#1f7a4d; --card:#f7f8fa;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 28px 64px}
+  .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  h1{font-size:30px;line-height:1.2;margin:8px 0 6px;font-weight:700}
+  h2{font-size:19px;margin:36px 0 10px;font-weight:700}
+  .sub{color:var(--muted);font-size:15px;margin:0 0 28px}
+  .rule{height:1px;background:var(--line);border:0;margin:28px 0}
+  .seam{background:var(--accent-soft);border-left:4px solid var(--accent);
+    padding:18px 20px;border-radius:8px;margin:18px 0}
+  .seam strong{color:var(--accent)}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:18px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .card .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .card .num{font-size:24px;font-weight:700;margin-top:6px}
+  .card .note{font-size:13px;color:var(--muted);margin-top:4px}
+  ol,ul{padding-left:20px}
+  li{margin:6px 0}
+  .check{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin:14px 0}
+  .foot{margin-top:40px;font-size:14px;color:var(--muted)}
+  .cta{display:inline-block;margin-top:10px;background:var(--ink);color:#fff;text-decoration:none;
+    padding:12px 20px;border-radius:8px;font-weight:600}
+  .small{font-size:13px;color:var(--muted)}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">A finding, not a pitch</div>
+  <h1>A likely silent seam in Alta Pest Control's lead flow</h1>
+  <p class="sub">One page. One seam. A rough number. Read time: 3 minutes.</p>
+
+  <p>I ran HubSpot inside a multi-state residential roofing operation, the same multi-location, in-home, field-services
+  shape Alta runs, just a messier version of it. Day to day I map the silent seams between the tools a field-services
+  company runs on. You clearly run a real operation, built from a Seattle garage in 2013 into 17 metro markets across
+  the country, residential pest, mosquito, and termite work, growing fast, with leads coming in through HubSpot and the
+  field running through a separate operations platform. Looking only at Alta's <em>public</em> footprint (that branch
+  count, that recurring-plan model, leads captured on HubSpot and dispatched through a different field-ops system), one
+  seam stands out as worth a two-minute check. It is the kind that is genuinely hard to see from inside a fast-growing
+  shop, even for a sharp team. I have not seen your system. This is the pattern, and how to check it yourself.</p>
+
+  <h2>When leads cross many branches and then jump systems, the handoff is where they quietly stall.</h2>
+  <p>At a single-branch shop, one person can watch a lead from the first call to the first service on the calendar. At
+  Alta's reach, an inbound lead can come from any of 17 metro markets, then it has to make two jumps: out of the lead
+  system and into field operations as a scheduled first service, and then from that first service into a recurring plan
+  that bills month after month. Every one of those handoffs is a seam: the branch the lead came from, the channel that
+  brought it in, the jump from the lead system into field ops, and the conversion into a recurring subscription. They
+  are invisible when they work and invisible when they don't, because no single person is watching the whole path on one
+  screen while everyone is busy booking the next job. That is not a competence gap. It is a structural blind spot that a
+  multi-branch, recurring-revenue operation running two systems creates.</p>
+
+  <h2>The seam: leads that stall between branches, between systems, and between the first service and the recurring plan</h2>
+  <div class="seam">
+    <p style="margin:0">When <strong>one lead system carries high-volume inbound across 17 markets</strong> and then has
+    to hand off into a <strong>separate field-operations system</strong> and finally into a <strong>recurring
+    subscription plan</strong>, a fraction of leads stall in the gaps: a <strong>lead routed to the wrong branch</strong>
+    or never picked back up, a <strong>quote that never becomes a scheduled first service</strong>, or a sold customer
+    whose <strong>recurring plan quietly lapses</strong> after the first or second visit. They die quietly. And because
+    <strong>lead source is not tagged cleanly</strong> across branches and channels, and because the lead system and the
+    field-ops system are two different worlds, you cannot see <strong>which branch or channel the lost ones came
+    from</strong>, so the leak never trips an alarm and the wasted acquisition spend never gets traced back. On a
+    recurring-plan business the stakes are larger than they look, because a silently churned customer is not a one-time
+    loss, it is a multi-year stream that simply stops. The loss only shows up in the gap between leads paid for and
+    recurring plans actually running, and that single end-to-end view is exactly what a busy multi-branch operation
+    does not naturally have.</p>
+  </div>
+  <p>This is the textbook definition of a seam: the point where a lead has to cross several branches, two separate
+  systems, and one subscription conversion cleanly, and a small fraction quietly falls through with no signal. A visible
+  leak gets fixed same day. A silent one runs for years, and on a recurring-plan business the years compound, because
+  every lost plan is revenue you keep not collecting every month after.</p>
+
+  <h2>Roughly what it costs (public-data estimate)</h2>
+  <p class="small">Built from public figures (a fast-growing residential pest, mosquito, and termite operator across 17
+  metro markets; revenue treated as a conservative floor around $38M, which is the most recent reported figure and likely
+  understates a business that grew roughly 400% over three years; a blended first-year customer value around $750,
+  blending a $500 to $700 annual recurring pest plan with higher one-time termite and bed-bug jobs). Basis: ~$38M floor
+  / ~$750 blended first-year value = roughly 50,000 active customers, and to sustain that plus the growth and replace
+  normal plan churn the operation works on the order of 63,000 acquisition leads a year at a 30% close. Directional and
+  estimate-grade, a floor meant to be made exact in an audit, and it counts first-year value only, so the recurring
+  annuity on each lost customer is upside on top.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="lbl">Conservative</div>
+      <div class="num">~$190K / yr</div>
+      <div class="note">~1% of inbound leads and new plans silently lost</div>
+    </div>
+    <div class="card">
+      <div class="lbl">Realistic</div>
+      <div class="num">~$380K / yr</div>
+      <div class="note">~2% lost in the gaps</div>
+    </div>
+    <div class="card">
+      <div class="lbl">Aggressive</div>
+      <div class="num">~$570K / yr</div>
+      <div class="note">~3% lost in the gaps</div>
+    </div>
+  </div>
+  <p class="small">These are directional and estimate-grade, and they are a floor. The real number is very likely higher,
+  because the revenue basis itself is conservative and because each silently lost customer on a recurring plan is a
+  multi-year stream, not a single job. The point is the order of magnitude: this is a margin line, not a rounding
+  error.</p>
+
+  <hr class="rule">
+
+  <h2>Check it yourself in two minutes</h2>
+  <div class="check">
+    <ol>
+      <li>In HubSpot, pull <strong>every inbound lead from the last 90 days grouped by lead source and by
+      branch / market</strong>. If a meaningful share come in as <strong>unknown, direct, or blank source</strong>, or
+      with no clean branch tag, attribution is blurry, and you cannot tell which branch or channel is actually paying
+      for itself.</li>
+      <li>Match those leads against the field-ops system: <strong>how many leads never became a scheduled first
+      service</strong>, and of the customers who got a first service, <strong>how many never converted to or kept a
+      recurring plan</strong>. Count them. Those are the ones stalling in the handoff between the lead system, the field,
+      and the subscription.</li>
+      <li>Ask for <strong>cost-per-running-recurring-plan by lead source and by branch</strong>. If that report cannot
+      be built cleanly because lead source, branch, the first scheduled service, and the recurring-plan status are not
+      connected end to end across the two systems, the view is blurred, and so is the leak.</li>
+    </ol>
+    <p style="margin:8px 0 0" class="small">If any of those is messier than you'd like, the seam is live,
+    and the number above is no longer hypothetical.</p>
+  </div>
+
+  <h2>Why I am sending this</h2>
+  <p>This is one seam. A full audit maps the rest across your stack (duplicate owners, form resubmission,
+  cross-branch routing, the lead-to-field handoff, recurring-plan attribution), each with a dollar number, in priority
+  order. Closing them is your team's call, you know your system best. What the map adds is speed: it points you straight
+  to the seams where the real money is, so you fix the right ones first. If the one-pager was useful, that is the
+  conversation worth having.</p>
+
+  <a class="cta" href="#">See the full-audit overview</a>
+  <!-- v2: replace href with the per-prospect tracked URL behind the QR code -->
+
+  <p class="foot">
+    Adrian Johnson &middot; Integration &amp; AI-governance architect<br>
+    Public-footprint finding for Alta Pest Control. Read-only, public data only. No systems were accessed.
+  </p>
+
+</div>
+<script>if(new URLSearchParams(location.search).get("preview")!=="1"){fetch("https://script.google.com/macros/s/AKfycbyB-21mpXwGbI0MZ3wFOcWNLgY5jCnscYFUdgR6FZxifxj3muuwAplFnG7zU2ef5X3pGQ/exec?id=alta-pest-control&ref=finding",{mode:"no-cors"});}</script>
+</body>
+</html>
