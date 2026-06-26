@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--
+  OCS demonstration finding for Strategic Grounds Management (Ashland, VA HQ; nationwide multi-site commercial grounds management).
+  HubSpot confirmed live: hsforms.net/forms/v2 and portalId "4515720" present in raw page source (forms + lead capture run on HubSpot),
+  with _hsq on home, contact, and who-we-serve pages. Single-CRM HubSpot, no Salesforce / Pardot / Aspire / LMN / ServiceTitan in raw HTML.
+  Nationwide multi-site model: recurring commercial maintenance contracts (the core annuity) plus longer-cycle install / enhancement bids,
+  coordinated centrally across many regions out of one HubSpot. Seam used: cross-region lead/bid routing + lead-source attribution +
+  the bid-to-contract-to-recurring-maintenance handoff, where one HubSpot carries inbound across many regions and two very different work
+  types, and a fraction stall between channel, region, bid, and recurring service with no single owner watching the gap. Recurring contracts
+  are annuity-shaped, so a single lost or churned multi-site contract compounds over years, and a lapsed contract produces no inbound alarm.
+  Decision-maker: Sean Walsh, Director (CFO / M&A / PE background, reads the dollar frame natively). Tone: respect a real nationwide
+  multi-site operation first, then name the one seam that hides where recurring maintenance and install bids cross many regions on one system.
+  v1: send as attachment (PDF) or host as a page.
+  TRACKING PIXEL GOES HERE -> <img src="https://YOURDOMAIN/p/strategic-grounds-management.gif" width="1" height="1" alt="">
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Likely Silent Seam in Strategic Grounds Management's Lead and Contract Flow</title>
+<style>
+  :root{
+    --ink:#15191e; --muted:#5b6470; --line:#e4e7eb; --bg:#ffffff;
+    --accent:#2e6e4e; --accent-soft:#e6f1ec; --good:#1f7a4d; --card:#f7f8fa;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 28px 64px}
+  .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  h1{font-size:30px;line-height:1.2;margin:8px 0 6px;font-weight:700}
+  h2{font-size:19px;margin:36px 0 10px;font-weight:700}
+  .sub{color:var(--muted);font-size:15px;margin:0 0 28px}
+  .rule{height:1px;background:var(--line);border:0;margin:28px 0}
+  .seam{background:var(--accent-soft);border-left:4px solid var(--accent);
+    padding:18px 20px;border-radius:8px;margin:18px 0}
+  .seam strong{color:var(--accent)}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:18px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .card .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .card .num{font-size:24px;font-weight:700;margin-top:6px}
+  .card .note{font-size:13px;color:var(--muted);margin-top:4px}
+  ol,ul{padding-left:20px}
+  li{margin:6px 0}
+  .check{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin:14px 0}
+  .foot{margin-top:40px;font-size:14px;color:var(--muted)}
+  .cta{display:inline-block;margin-top:10px;background:var(--ink);color:#fff;text-decoration:none;
+    padding:12px 20px;border-radius:8px;font-weight:600}
+  .small{font-size:13px;color:var(--muted)}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">A finding, not a pitch</div>
+  <h1>A likely silent seam in Strategic Grounds Management's lead and contract flow</h1>
+  <p class="sub">One page. One seam. A rough number. Read time: 3 minutes.</p>
+
+  <p>I ran HubSpot inside a multi-state residential roofing operation, the same multi-location field-services
+  shape you run, just a messier version of it. Day to day, I map the silent seams between the tools a field-services
+  company runs on. You clearly run a real operation, serving commercial clients with geographically dispersed
+  properties nationwide, both recurring grounds maintenance and the install and enhancement work alongside it,
+  all coordinated on one HubSpot. Looking only at Strategic Grounds' <em>public</em> footprint (that nationwide
+  multi-site model, that mix of recurring maintenance contracts and install bids, all running on one HubSpot), one
+  seam stands out as worth a two-minute check. It is the kind that is genuinely hard to see from inside a busy
+  operation, even for a sharp team. I have not seen your system. This is the pattern, and how to check it yourself.</p>
+
+  <h2>When inbound crosses many regions and two work types, the handoff is where it quietly stalls.</h2>
+  <p>At a single-market shop, one person can watch an inquiry from the first call to the crew on site. At Strategic
+  Grounds' reach, an inbound can come from any region and split into two very different paths: a recurring multi-site
+  maintenance contract runs one way, and a one-off install or enhancement bid runs a completely different way, through
+  a longer cycle with a facilities or property manager, a walkthrough, a bid, and a start date. Every one of those
+  handoffs is a seam: the region the inquiry came from, the channel that brought it in, the jump from a won bid into a
+  tracked recurring contract, and the renewal at the end of each contract year. They are invisible when they work and
+  invisible when they don't, because no single person is watching the whole path on one screen while everyone is busy
+  servicing the next property. That is not a competence gap. It is a structural blind spot that a nationwide,
+  multi-site, maintenance-and-install operation creates.</p>
+
+  <h2>The seam: inbound and renewals that stall between regions, channels, and the recurring-contract handoff, with attribution too blurry to see it</h2>
+  <div class="seam">
+    <p style="margin:0">When <strong>one HubSpot carries inbound across many regions</strong> and <strong>two very
+    different work types</strong> (a recurring multi-site maintenance contract and a longer-cycle install or
+    enhancement bid), a fraction stall in the gaps: a <strong>multi-property bid that waits on a facilities or
+    property manager</strong> and goes cold, an <strong>inquiry routed to the wrong region or owner</strong> and never
+    picked back up, or a <strong>won bid that never cleanly converts into a tracked recurring contract</strong>. They
+    die quietly. The recurring side is worse, because a <strong>maintenance contract that quietly lapses or churns at
+    renewal makes no noise at all</strong>, it just stops generating revenue, and nothing in the inbox tells you it
+    happened. And because <strong>lead source is not tagged cleanly</strong> across channels and regions, you cannot
+    see <strong>which channel or which region the lost ones came from</strong>, so the leak never trips an alarm and
+    the wasted spend never gets traced back. On recurring multi-site work the stakes per lost contract are large,
+    because a single contract is an annuity that compounds over years. The loss only shows up in the gap between
+    inbound paid for and contracts actually running, and that single end-to-end view is exactly what a busy
+    nationwide operation does not naturally have.</p>
+  </div>
+  <p>This is the textbook definition of a seam: the point where one system is asked to carry an inquiry cleanly
+  across several handoffs, several channels, and several regions at once, and a small fraction quietly falls through
+  with no signal. A visible leak gets fixed same day. A silent one runs for years, and on annuity-shaped recurring
+  contracts the years add up fast.</p>
+
+  <h2>Roughly what it costs (public-data estimate)</h2>
+  <p class="small">Built from public figures (a nationwide multi-site commercial grounds operation running recurring
+  maintenance contracts alongside install and enhancement work; revenue treated as a conservative floor around $9M,
+  which for a field-services firm of this reach likely understates it; a blended average annual value around $30K,
+  reflecting that recurring multi-site contracts and larger install bids run well above a single residential job
+  while smaller jobs pull the blend down). Basis: ~$9M floor / ~$30K blended value = roughly 300 active
+  contracts or jobs a year, or about 1,000 inbound and renewal touches at a 30% close or retain. Directional and
+  estimate-grade, a floor meant to be made exact in an audit.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="lbl">Conservative</div>
+      <div class="num">~$90K / yr</div>
+      <div class="note">~1% of inbound and renewals silently lost</div>
+    </div>
+    <div class="card">
+      <div class="lbl">Realistic</div>
+      <div class="num">~$180K / yr</div>
+      <div class="note">~2% lost in the gaps</div>
+    </div>
+    <div class="card">
+      <div class="lbl">Aggressive</div>
+      <div class="num">~$270K / yr</div>
+      <div class="note">~3% lost in the gaps</div>
+    </div>
+  </div>
+  <p class="small">These are directional and estimate-grade, and they are a floor. The real number is very likely
+  higher, because the revenue basis itself is conservative and a single lost or churned multi-site contract can be
+  worth more than the whole conservative tier on its own once you count the years it would have renewed. The point is
+  the order of magnitude: this is a margin line, not a rounding error.</p>
+
+  <hr class="rule">
+
+  <h2>Check it yourself in two minutes</h2>
+  <div class="check">
+    <ol>
+      <li>In HubSpot, pull <strong>every inbound from the last 90 days grouped by lead source and by region</strong>.
+      If a meaningful share come in as <strong>unknown, direct, or blank source</strong>, or with no clean region tag,
+      attribution is blurry, and you cannot tell which channel or area is actually paying for itself.</li>
+      <li>Filter for <strong>install or enhancement bids that went quiet waiting on a facilities or property
+      manager</strong>, and for <strong>won bids that never moved into a tracked recurring-maintenance
+      contract</strong>. Then look at <strong>contracts that lapsed or churned at renewal</strong> with no follow-up
+      logged. Count them. Those are the ones stalling in the handoff, and on the recurring side each one is an
+      annuity.</li>
+      <li>Ask HubSpot for <strong>revenue-retained by lead source, split recurring maintenance vs install</strong>.
+      If that report cannot be built cleanly because source, work type, and the recurring-contract stage are not
+      connected end to end, the view is blurred, and so is the leak.</li>
+    </ol>
+    <p style="margin:8px 0 0" class="small">If any of those is messier than you'd like, the seam is live,
+    and the number above is no longer hypothetical.</p>
+  </div>
+
+  <h2>Why I am sending this</h2>
+  <p>This is one seam. A full audit maps the rest across your stack (duplicate owners, form resubmission,
+  the recurring-contract handoff, renewal tracking, lead-source attribution), each with a dollar number, in
+  priority order. Closing them is your team's call, you know your system best. What the map adds is speed: it
+  points you straight to the seams where the real money is, so you fix the right ones first. If the one-pager was
+  useful, that is the conversation worth having.</p>
+
+  <a class="cta" href="#">See the full-audit overview</a>
+  <!-- v2: replace href with the per-prospect tracked URL behind the QR code -->
+
+  <p class="foot">
+    Adrian Johnson &middot; Integration &amp; AI-governance architect<br>
+    Public-footprint finding for Strategic Grounds Management. Read-only, public data only. No systems were accessed.
+  </p>
+
+</div>
+<script>if(new URLSearchParams(location.search).get("preview")!=="1"){fetch("https://script.google.com/macros/s/AKfycbyB-21mpXwGbI0MZ3wFOcWNLgY5jCnscYFUdgR6FZxifxj3muuwAplFnG7zU2ef5X3pGQ/exec?id=strategic-grounds-management&ref=finding",{mode:"no-cors"});}</script>
+</body>
+</html>
