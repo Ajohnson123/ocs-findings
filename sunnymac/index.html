@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!--
+  OCS demonstration finding for SunnyMac (SunnyMac Solar) (Wilmington, DE HQ; branches Marlton, NJ and Bethlehem, PA; serving DE / MD / NJ / PA).
+  HubSpot confirmed live: portalId: 48215453 present in the HubSpot forms embed on the home page, and js.hs-scripts.com/48215453
+  on the contact and about pages (tracking + CRM run on HubSpot); the script resolves HTTP 200. Site is WordPress + Gravity Forms with
+  HubSpot as the live tracking/CRM layer and HubSpot forms embedded (hbspt.forms, js.hsforms.net). No competing CRM found in the raw HTML
+  (no Salesforce, ServiceTitan, AccuLynx, JobNimbus, Scorpion); HubSpot is the single functioning system of record.
+  Multi-market, multi-branch operation (DE, MD, NJ, PA; three offices), residential + commercial solar + battery + HVAC + roofing,
+  long solar sales-to-PTO-to-install cycle. Seam used: multi-branch and multi-state lead-source attribution + the long sell-to-PTO-to-install
+  handoff + cross-trade routing, where one HubSpot carries leads across four states, three branches, and four trades through a long install
+  cycle, and a fraction stall between channel, branch, trade, design, permitting, install, and PTO with no single owner watching the gap.
+  Solar customer-acquisition cost is high, so the dollar stakes per lost lead are high.
+  Decision-maker: Matt MacFadden, Owner & CEO. Tone: respect a 2009-founded, 14,000-install, four-state operation first,
+  then name the one seam that hides where solar, battery, HVAC, and roofing leads cross four states and three branches on one system.
+  v1: send as attachment (PDF) or host as a page.
+  TRACKING PIXEL GOES HERE -> <img src="https://YOURDOMAIN/p/sunnymac.gif" width="1" height="1" alt="">
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Likely Silent Seam in SunnyMac's Lead Flow</title>
+<style>
+  :root{
+    --ink:#15191e; --muted:#5b6470; --line:#e4e7eb; --bg:#ffffff;
+    --accent:#2e6e4e; --accent-soft:#e6f1ec; --good:#1f7a4d; --card:#f7f8fa;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 28px 64px}
+  .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  h1{font-size:30px;line-height:1.2;margin:8px 0 6px;font-weight:700}
+  h2{font-size:19px;margin:36px 0 10px;font-weight:700}
+  .sub{color:var(--muted);font-size:15px;margin:0 0 28px}
+  .rule{height:1px;background:var(--line);border:0;margin:28px 0}
+  .seam{background:var(--accent-soft);border-left:4px solid var(--accent);
+    padding:18px 20px;border-radius:8px;margin:18px 0}
+  .seam strong{color:var(--accent)}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:18px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .card .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .card .num{font-size:24px;font-weight:700;margin-top:6px}
+  .card .note{font-size:13px;color:var(--muted);margin-top:4px}
+  ol,ul{padding-left:20px}
+  li{margin:6px 0}
+  .check{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin:14px 0}
+  .foot{margin-top:40px;font-size:14px;color:var(--muted)}
+  .cta{display:inline-block;margin-top:10px;background:var(--ink);color:#fff;text-decoration:none;
+    padding:12px 20px;border-radius:8px;font-weight:600}
+  .small{font-size:13px;color:var(--muted)}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">A finding, not a pitch</div>
+  <h1>A likely silent seam in SunnyMac's lead flow</h1>
+  <p class="sub">One page. One seam. A rough number. Read time: 3 minutes.</p>
+
+  <p>I ran HubSpot inside a multi-state residential roofing operation, the same multi-location, field-services
+  shape you run, just a messier version of it. So I spend my time on the seams between the tools a home-energy
+  company runs on. You clearly run a real operation, founded in 2009, 14,000-plus installs, three branches across
+  Delaware, Maryland, New Jersey, and Pennsylvania, with solar, battery, HVAC, and roofing all running on one
+  HubSpot. Looking only at SunnyMac's <em>public</em> footprint (that four-state, three-branch reach, that mix of
+  solar, battery, and home-services trades, the long install cycle, all running on one HubSpot), one seam stands
+  out as worth a two-minute check. It is the kind that is genuinely hard to see from inside a busy shop, even for a
+  seasoned team. I have not seen your system. This is the pattern, and how to check it yourself.</p>
+
+  <h2>When leads cross four states, three branches, and a long install cycle, the handoffs are where they quietly stall.</h2>
+  <p>At a single-market shop with one trade, one person can watch a lead from the first click to the system
+  switching on. At SunnyMac's reach, an inbound lead can come from any of four states, route to any of three
+  branches, and split across four different trades: a solar and battery job runs one way, a roofing job another, an
+  HVAC job another still. And the solar work moves through a long cycle, from first click to site survey, design,
+  contract, permitting, install, inspection, and permission to operate. Every one of those handoffs is a seam: the
+  state the lead came from, the branch it routed to, the trade it belongs to, the jump from sales to design, the
+  jump from a sold deal to install and PTO. They are invisible when they work and invisible when they don't, because
+  no single person is watching the whole path on one screen while everyone is busy closing the next deal. That is
+  not a competence gap. It is a structural blind spot that a multi-branch, multi-trade operation with a long install
+  cycle creates.</p>
+
+  <h2>The seam: leads that stall between states, branches, trades, and the long install handoff, with attribution too blurry to see it</h2>
+  <div class="seam">
+    <p style="margin:0">When <strong>one HubSpot carries leads across four states</strong> (Delaware, Maryland, New
+    Jersey, Pennsylvania), <strong>three branches</strong> (Wilmington, Marlton, Bethlehem), and <strong>four
+    different trades</strong> (solar, battery, HVAC, roofing), through a <strong>long sell-to-PTO-to-install
+    cycle</strong>, a fraction of leads stall in the gaps: a <strong>solar deal that goes quiet between design and
+    permitting</strong>, a <strong>lead routed to the wrong branch or trade</strong> and never picked back up, a
+    <strong>roofing or HVAC cross-sell that never gets re-touched</strong>, or a sold job that <strong>never cleanly
+    hands to install and PTO</strong>. They die quietly. And because <strong>lead source is not tagged cleanly</strong>
+    across channels, branches, and states, you cannot see <strong>which channel, branch, or market the lost ones came
+    from</strong>, so the leak never trips an alarm and the wasted acquisition spend never gets traced back. Solar
+    customer-acquisition cost is high, so the stakes per lost lead are large, and a single stalled full-system or
+    commercial-solar deal is worth several smaller jobs. The loss only shows up in the gap between leads paid for and
+    systems actually installed, and that single end-to-end view is exactly what a busy multi-branch operation does not
+    naturally have.</p>
+  </div>
+  <p>This is the textbook definition of a seam: the point where one system is asked to carry a lead cleanly across
+  several handoffs, several channels, four states, three branches, and a long install cycle all at once, and a small
+  fraction quietly falls through with no signal. A visible leak gets fixed same day. A silent one runs for years, and
+  on solar-sized deals with high acquisition cost, the years add up fast.</p>
+
+  <h2>Roughly what it costs (public-data estimate)</h2>
+  <p class="small">Built from public figures (a 2009-founded residential-and-commercial solar, battery, HVAC, and
+  roofing operation serving DE, MD, NJ, and PA across three branches; revenue treated as a public estimate around
+  $20.5M, in line with reported figures; a blended average job around $24K, reflecting that a residential solar and
+  battery job runs near $25K-$30K while HVAC and roofing jobs run lower). Basis: ~$20.5M / ~$24K blended job =
+  roughly 850 installs a year, or about 2,850 inbound leads at a 30% close. Directional and estimate-grade, a floor
+  meant to be made exact in an audit.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="lbl">Conservative</div>
+      <div class="num">~$205K / yr</div>
+      <div class="note">~1% of inbound leads silently lost</div>
+    </div>
+    <div class="card">
+      <div class="lbl">Realistic</div>
+      <div class="num">~$410K / yr</div>
+      <div class="note">~2% lost in the gaps</div>
+    </div>
+    <div class="card">
+      <div class="lbl">Aggressive</div>
+      <div class="num">~$615K / yr</div>
+      <div class="note">~3% lost in the gaps</div>
+    </div>
+  </div>
+  <p class="small">These are directional and estimate-grade, and they are a floor. The real number is very likely
+  higher, because solar acquisition cost is high and a single lost full-system or commercial-solar deal can be worth
+  more than several of the smaller jobs in the blend. The point is the order of magnitude: this is a margin line, not
+  a rounding error.</p>
+
+  <hr class="rule">
+
+  <h2>Check it yourself in two minutes</h2>
+  <div class="check">
+    <ol>
+      <li>In HubSpot, pull <strong>every inbound lead from the last 90 days grouped by lead source, by branch, and by
+      state (DE / MD / NJ / PA)</strong>. If a meaningful share come in as <strong>unknown, direct, or blank
+      source</strong>, or with no clean branch or state tag, attribution is blurry, and you cannot tell which channel,
+      branch, or market is actually paying for itself.</li>
+      <li>Filter for <strong>solar deals that went quiet between design and permitting</strong>, <strong>leads routed
+      to the wrong branch or trade</strong>, and <strong>sold jobs that never moved into a scheduled install or
+      PTO</strong>. Count them. Those are the ones stalling in the handoff, and on the full-system side each one is
+      large.</li>
+      <li>Ask HubSpot for <strong>cost-per-installed-system by lead source, split by branch and by trade</strong>. If
+      that report cannot be built cleanly because source, branch, trade, and the install and PTO stages are not
+      connected end to end, the view is blurred, and so is the leak.</li>
+    </ol>
+    <p style="margin:8px 0 0" class="small">If any of those is messier than you'd like, the seam is live,
+    and the number above is no longer hypothetical.</p>
+  </div>
+
+  <h2>Why I am sending this</h2>
+  <p>This is one seam. A full audit maps the rest across your stack (duplicate owners, form resubmission,
+  the install and PTO handoff, cross-branch routing, lead-source attribution), each with a dollar number, in
+  priority order. Closing them is your team's call, you know your system best. What the map adds is speed: it
+  points you straight to the seams where the real money is, so you fix the right ones first. If the one-pager
+  was useful, that is the conversation worth having.</p>
+
+  <a class="cta" href="#">See the full-audit overview</a>
+  <!-- v2: replace href with the per-prospect tracked URL behind the QR code -->
+
+  <p class="foot">
+    Adrian Johnson &middot; Integration &amp; AI-governance architect<br>
+    Public-footprint finding for SunnyMac. Read-only, public data only. No systems were accessed.
+  </p>
+
+</div>
+<script>if(new URLSearchParams(location.search).get("preview")!=="1"){fetch("https://script.google.com/macros/s/AKfycbyB-21mpXwGbI0MZ3wFOcWNLgY5jCnscYFUdgR6FZxifxj3muuwAplFnG7zU2ef5X3pGQ/exec?id=sunnymac&ref=finding",{mode:"no-cors"});}</script>
+</body>
+</html>
