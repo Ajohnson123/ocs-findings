@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!--
+  OCS demonstration finding for Roofsmith Restoration (HQ Akron, OH; markets across Cleveland, Akron, Canton OH plus greater Cincinnati OH,
+  greater Nashville TN, and greater Fort Myers FL).
+  HubSpot confirmed live (reverified 2026-07-02): /hs/scriptloader/4412094.js in raw page source on roof-smith.com; js.hs-scripts.com/4412094.js
+  returns HTTP 200 with a real HubSpot Script Loader payload that loads js.hs-banner.com/v2/4412094/banner.js; _hsq present six times; portal
+  4412094. Only two GTM containers alongside it (GTM-MBKSS9NQ, GTM-W5893JR), not a second CRM. No Salesforce, ServiceTitan, AccuLynx, JobNimbus,
+  Pardot, or Marketo in the raw HTML, and no WordPress. Single-CRM HubSpot.
+  Portal-collision clearance: 4412094 is Roofsmith's OWN portal (independent company founded 2009 by Mike Farist), NOT Feazel's 21050917 and not
+  shared with any excluded roll-up.
+  Storm and insurance restoration roofer, several Ohio-and-beyond metro markets, running an insurance-claim track alongside a retail track and
+  residential alongside commercial, all on one HubSpot. Seam used: lead-source attribution across storm channels + the storm-lead-to-claim-to-
+  production handoff across multiple metros, where one HubSpot carries storm and retail leads across several markets and two very different paths
+  and a fraction stall between the storm canvass, the claim, the market, and production with no single owner watching the gap. Storm restoration
+  lead volume is spiky, so the leakage runs higher right when the spend is highest.
+  Decision-maker: Mike Farist, Founder and CEO (also Director of Sales).
+  Tone: respect a 2009-founded, owner-run, Owens Corning Platinum Preferred, Haag-certified Ohio operation first, then name the one seam that hides
+  where several metros and an insurance-claim track cross on one system.
+  NOTE: revenue estimate-grade (~$20M conservative floor; no exact public figure). Inside the usual $10-50M target band.
+  v1: send as attachment (PDF) or host as a page.
+  TRACKING PIXEL GOES HERE -> <img src="https://YOURDOMAIN/p/roofsmith-restoration.gif" width="1" height="1" alt="">
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Likely Silent Seam in Roofsmith Restoration's Storm Lead Flow</title>
+<style>
+  :root{
+    --ink:#15191e; --muted:#5b6470; --line:#e4e7eb; --bg:#ffffff;
+    --accent:#2e6e4e; --accent-soft:#e6f1ec; --good:#1f7a4d; --card:#f7f8fa;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;}
+  .wrap{max-width:760px;margin:0 auto;padding:48px 28px 64px}
+  .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  h1{font-size:30px;line-height:1.2;margin:8px 0 6px;font-weight:700}
+  h2{font-size:19px;margin:36px 0 10px;font-weight:700}
+  .sub{color:var(--muted);font-size:15px;margin:0 0 28px}
+  .rule{height:1px;background:var(--line);border:0;margin:28px 0}
+  .seam{background:var(--accent-soft);border-left:4px solid var(--accent);
+    padding:18px 20px;border-radius:8px;margin:18px 0}
+  .seam strong{color:var(--accent)}
+  .grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin:18px 0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px}
+  .card .lbl{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  .card .num{font-size:24px;font-weight:700;margin-top:6px}
+  .card .note{font-size:13px;color:var(--muted);margin-top:4px}
+  ol,ul{padding-left:20px}
+  li{margin:6px 0}
+  .check{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px 22px;margin:14px 0}
+  .foot{margin-top:40px;font-size:14px;color:var(--muted)}
+  .cta{display:inline-block;margin-top:10px;background:var(--ink);color:#fff;text-decoration:none;
+    padding:12px 20px;border-radius:8px;font-weight:600}
+  .small{font-size:13px;color:var(--muted)}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="eyebrow">A finding, not a pitch</div>
+  <h1>A likely silent seam in Roofsmith Restoration's storm lead flow</h1>
+  <p class="sub">One page. One seam. A rough number. Read time: 3 minutes.</p>
+
+  <p>I ran HubSpot inside a multi-state residential roofing operation, the same multi-location field-services shape you run, just a
+  messier version of it. Day to day, I map the silent seams between the tools a roofing company runs on. You clearly run a real
+  operation, built since 2009, Owens Corning Platinum Preferred, Haag-certified, several metro markets from Cleveland and Akron to
+  Nashville, roofing and storm restoration side by side with an insurance-claim track running the whole time, all on one HubSpot.
+  Looking only at Roofsmith's <em>public</em> footprint (that multi-market reach, that storm damage and insurance-restoration work
+  for both residential and commercial, all running on one HubSpot), one seam stands out as worth a two-minute check. It is the kind
+  that is genuinely hard to see from inside a busy shop that spikes with every storm, even for a seasoned team. I have not seen your
+  system. This is the pattern, and how to check it yourself.</p>
+
+  <h2>When storm leads cross several markets and split into a claim path and a retail path, the handoff is where they quietly stall.</h2>
+  <p>At a single-market shop with one job type, one person can watch a lead from the first knock to the crew rolling off the finished
+  roof. At Roofsmith's reach, an inbound lead can come from any of several markets and from any of several storm channels, then split
+  into two very different paths: a retail re-roof runs one way, and an insurance-restoration job runs a completely different way
+  through the inspection, the adjuster, the scope, the supplement, the approval, and only then production. On top of that, residential
+  and commercial each run their own way. Every one of those handoffs is a seam: the market the lead came from, the storm event and
+  channel that produced it, the jump from a claim into a scheduled job. They are invisible when they work and invisible when they
+  don't, because no single person is watching the whole path on one screen while everyone is busy chasing the next storm. That is not
+  a competence gap. It is a structural blind spot that a several-market, storm-driven, insurance-restoration operation creates.</p>
+
+  <h2>The seam: storm leads that stall between markets, the claim, and the production handoff, with attribution too blurry to see it</h2>
+  <div class="seam">
+    <p style="margin:0">When <strong>one HubSpot carries storm and retail leads across several metro markets</strong> and
+    <strong>two very different paths</strong> (a retail re-roof and an insurance-restoration claim), for both residential and
+    commercial, a fraction of leads stall in the gaps: a <strong>claim that goes quiet waiting on an adjuster or a supplement</strong>,
+    a <strong>storm-canvass lead routed to the wrong market or never worked</strong>, a <strong>commercial bid that goes cold</strong>,
+    or a <strong>signed job that never cleanly hands to production</strong>. They die quietly. And because <strong>lead source is not
+    tagged cleanly</strong> across storm channels (canvassing after a hail or wind event, referrals, web, insurance referrals),
+    markets, and the two tracks, you cannot see <strong>which storm, channel, or market the lost ones came from</strong>, so the leak
+    never trips an alarm and the money spent chasing that storm never gets traced back. Storm volume spikes hard right after each
+    event, which is exactly when a lead is most likely to slip. The loss only shows up in the gap between leads paid for and roofs
+    actually produced, and that single end-to-end view is exactly what a busy several-market storm operation does not naturally
+    have.</p>
+  </div>
+  <p>This is the textbook definition of a seam: the point where one system is asked to carry a lead cleanly across several handoffs,
+  several channels, several markets, and two tracks at once, and a small fraction quietly falls through with no signal. A visible leak
+  gets fixed same day. A silent one runs storm after storm, and the lost roofs add up fast.</p>
+
+  <h2>Roughly what it costs (public-data estimate)</h2>
+  <p class="small">Built from public figures (a several-market storm and insurance restoration roofer running residential and
+  commercial roofing, siding, and gutters since 2009; revenue treated as a conservative floor around $20M, which for an operation of
+  this reach likely understates it; a blended average job around $14K, reflecting that residential storm re-roofs run roughly $12K to
+  $18K while repair and gutter work runs lower and commercial work runs higher). Basis: ~$20M floor / ~$14K blended job = roughly
+  1,430 jobs a year, or about 4,760 inbound leads at a 30% close. Directional and estimate-grade, a floor meant to be made exact in an
+  audit.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="lbl">Conservative</div>
+      <div class="num">~$200K / yr</div>
+      <div class="note">~1% of inbound leads silently lost</div>
+    </div>
+    <div class="card">
+      <div class="lbl">Realistic</div>
+      <div class="num">~$400K / yr</div>
+      <div class="note">~2% lost in the gaps</div>
+    </div>
+    <div class="card">
+      <div class="lbl">Aggressive</div>
+      <div class="num">~$600K / yr</div>
+      <div class="note">~3% lost in the gaps</div>
+    </div>
+  </div>
+  <p class="small">These are directional and estimate-grade, and they are a floor. The real number is very likely higher, because the
+  revenue basis itself is conservative and storm restoration leakage spikes right when volume spikes. The point is the order of
+  magnitude: this is a margin line, not a rounding error.</p>
+
+  <hr class="rule">
+
+  <h2>Check it yourself in two minutes</h2>
+  <div class="check">
+    <ol>
+      <li>In HubSpot, pull <strong>every inbound lead from the last 90 days grouped by lead source and by market and by track (retail
+      vs insurance restoration)</strong>. If a meaningful share come in as <strong>unknown, direct, or blank source</strong>, or with
+      no clean market or track tag, attribution is blurry, and you cannot tell which storm, channel, or market is actually paying for
+      itself.</li>
+      <li>Filter for <strong>insurance-restoration claims that went quiet waiting on an adjuster or a supplement</strong>, and for
+      <strong>leads that never moved from a signed job into a scheduled production job</strong>. Count them. Those are the ones
+      stalling in the handoff, and after a storm each one is a full roof.</li>
+      <li>Ask HubSpot for <strong>cost-per-produced-job by lead source, split by market and track</strong>. If that report cannot be
+      built cleanly because source, market, track, and the production stage are not connected end to end, the view is blurred, and so
+      is the leak.</li>
+    </ol>
+    <p style="margin:8px 0 0" class="small">If any of those is messier than you'd like, the seam is live,
+    and the number above is no longer hypothetical.</p>
+  </div>
+
+  <h2>Why I am sending this</h2>
+  <p>This is one seam. A full audit maps the rest across your stack (duplicate owners, form resubmission,
+  the production handoff, lead-source attribution), each with a dollar number, in priority order. Closing
+  them is your team's call, you know your system best. What the map adds is speed: it points you straight
+  to the seams where the real money is, so you fix the right ones first. If the one-pager was useful, that
+  is the conversation worth having.</p>
+
+  <a class="cta" href="#">See the full-audit overview</a>
+  <!-- v2: replace href with the per-prospect tracked URL behind the QR code -->
+
+  <p class="foot">
+    Adrian Johnson &middot; Integration &amp; AI-governance architect<br>
+    Public-footprint finding for Roofsmith Restoration. Read-only, public data only. No systems were accessed.
+  </p>
+
+</div>
+<script>if(new URLSearchParams(location.search).get("preview")!=="1"){fetch("https://script.google.com/macros/s/AKfycbyB-21mpXwGbI0MZ3wFOcWNLgY5jCnscYFUdgR6FZxifxj3muuwAplFnG7zU2ef5X3pGQ/exec?id=roofsmith-restoration&ref=finding",{mode:"no-cors"});}</script>
+</body>
+</html>
